@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import { MDBRow, MDBCol, MDBBtn, MDBContainer } from 'mdbreact';
-import { Redirect, Link } from 'react-router-dom';
-import {
-    NotificationManager,
-    NotificationContainer
-  } from "react-notifications";
+import { Link } from 'react-router-dom';
   import 'react-notifications/lib/notifications.css';
 
 export class UserProfile extends Component {
@@ -46,7 +42,6 @@ export class UserProfile extends Component {
 
                     </MDBCol>
                 </MDBRow>
-                <NotificationContainer />
             </>
         );
     }

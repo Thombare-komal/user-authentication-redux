@@ -8,6 +8,7 @@ import LoginForm from "./components/login/loginForm";
 import ResetPassword from "./components/reset-password/resetPassword";
 import UserProfile from "./components/userProfile";
 import "./App.css";
+import { NotificationContainer } from "react-notifications";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Redirect from='/' to='/register' />
         </Switch>
       </Router>
+      <NotificationContainer />
     </div>
   );
 }

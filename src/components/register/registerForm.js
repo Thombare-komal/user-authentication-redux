@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { MDBRow, MDBCol, MDBBtn, MDBContainer } from 'mdbreact';
 import { connect } from "react-redux";
 import { add_user } from "../../redux/actions/register/index";
-import { Redirect, Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import {
-    NotificationManager,
-    NotificationContainer
+    NotificationManager
   } from "react-notifications";
   import 'react-notifications/lib/notifications.css';
 
@@ -66,6 +65,7 @@ export class RegisterForm extends Component {
         userData.password = this.state.password
         this.props.addUser(userData)
         NotificationManager.success("User Profile Created Successfully", "Success",5000);
+        console.log(NotificationManager)
     }
     componentDidMount = () => {
     }
@@ -166,7 +166,6 @@ export class RegisterForm extends Component {
 
                     </MDBCol>
                 </MDBRow>
-                <NotificationContainer />
             </>
         );
     }

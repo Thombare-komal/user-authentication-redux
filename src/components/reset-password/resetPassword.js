@@ -3,8 +3,7 @@ import { MDBRow, MDBCol, MDBBtn, MDBContainer } from 'mdbreact';
 import { connect } from "react-redux";
 import { reset_password } from "../../redux/actions/reset-password/index";
 import {
-    NotificationManager,
-    NotificationContainer
+    NotificationManager
   } from "react-notifications";
 
 export class ResetPassword extends Component {
@@ -126,7 +125,6 @@ export class ResetPassword extends Component {
 
                     </MDBCol>
                 </MDBRow>
-                <NotificationContainer/>
             </>
         );
     }

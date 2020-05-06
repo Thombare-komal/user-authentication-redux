@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { MDBRow, MDBCol, MDBBtn, MDBContainer } from 'mdbreact';
 import { connect } from "react-redux";
 import { add_user } from "../../redux/actions/register/index";
-import { Redirect, Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import {
-    NotificationManager,
-    NotificationContainer
+    NotificationManager
   } from "react-notifications";
   import 'react-notifications/lib/notifications.css';
 
@@ -124,7 +123,6 @@ export class LoginForm extends Component {
 
                     </MDBCol>
                 </MDBRow>
-                <NotificationContainer />
             </>
         );
     }
